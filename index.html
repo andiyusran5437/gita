@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>AYSGETEK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      hr {
+        border-width: 5px;
+        border-color: rgb(26, 123, 161);
+      }
+      p {
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+      }
+      .gita {
+        font-size: xx-large;
+        color: rgb(10, 10, 10);
+      }
+      body {
+        color: #333;
+        font: 16px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background: linear-gradient(-1deg, #ee7752, #e73c7e, #23a6d5);
+        background-size: 400% 400%;
+        height: 100vh;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      h1 {
+        color: #080808;
+        font-family: 'Pristina';
+        font-size: 55px;
+        font-weight: normal;
+      }
+
+      .list-numbered {
+        list-style: none;
+        margin-left: 1em;
+        counter-reset: line;
+      }
+
+      .list-numbered > li {
+        position: relative;
+        margin-bottom: 1.5em;
+      }
+
+      .list-numbered > li:before {
+        position: absolute;
+        left: -2.25em;
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin-right: 0.5em;
+        background-color: #460a02;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 1.25em;
+        counter-increment: line;
+        content: counter(line);
+      }
+      .listgg {
+        color: #850404;
+        font-family: 'Trocchi', serif;
+        font-size: 25px;
+        font-weight: normal;
+      }
+      li {
+        font-family: 'Trocchi', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <marquee><h1>Selamat Datang</h1></marquee>
+    </center>
+    <hr />
+    <center>
+      <p class="gita">Yusran dan Gita</p>
+      <p>Selasa, 19 Juli 2022</p>
+      <p>Grand Claro Hotel</p>
+    </center>
+    <ol class="list-numbered">
+      <label class="listgg">LIST TARGET 2022</label
+      ><br /><br />
+      <li>Yusran Harus Selesai Skripsinya</li>
+      <li>Yusran Janji Setia Sama GIta</li>
+      <li>Gita Harus Selesai Asistensi Mengajarnya</li>
+      <li>Gita Janji Setia Sama Yusran</li>
+    </ol>
+    <img src="photo.jpg" height="500px" />
+  </body>
+</html>
